@@ -1,0 +1,52 @@
+name: Deploy Next.js to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+
+            cd /home/ubuntu/webxpay
+
+            echo "Fetching latest main branch..."
+
+            git remote set-url origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+
+            git fetch origin main
+
+            git checkout main
+            git reset --hard origin/main
+
+            # Remove token from stored Git remote
+            git remote set-url origin https://github.com/${{ github.repository }}.git
+
+            echo "Deploying commit:"
+            git log -1 --oneline
+
+            # Clean previous build
+            rm -rf .next
+
+            # Install dependencies
+            npm ci
+
+            # Build project
+            npm run build
+
+            # Restart PM2
+            pm2 restart wxp --update-env || pm2 start npm --name "wxp" -- start

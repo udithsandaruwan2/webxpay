@@ -1,0 +1,62 @@
+:root {
+    --skew-angle: 17deg;
+    --skew-angle-mobile: 12deg;
+}
+
+.parallelogram-container {
+    display: flex;
+    position: relative;
+    padding: 10px 15px 10px 25px;
+    background-color: #22272D;
+    color: #F4FAFF;
+    border-radius: 23px;
+    max-width: 100%;
+    justify-content: center;
+    text-align: left;
+    scale: 95%;
+}
+
+@media (min-width: 768px) {
+    .parallelogram-container {
+        padding: 20px 30px 20px 45px;
+        scale: 100%;
+    }
+}
+
+.mission-container {
+    transform: skew(calc(-1 * var(--skew-angle-mobile)));
+    right: 4px;
+}
+
+.mission-content {
+    transform: skew(calc(1 * var(--skew-angle-mobile)));
+}
+
+
+@media (min-width: 768px) {
+    .mission-container {
+        transform: skew(calc(1 * var(--skew-angle)));
+    }
+
+    .mission-content {
+        transform: skew(calc(-1 * var(--skew-angle)));
+    }
+}
+
+.container-to-right {
+    transform: skew(var(--skew-angle-mobile));
+}
+
+.content-to-right {
+    transform: skew(calc(-1 * var(--skew-angle-mobile)));
+}
+
+@media (min-width: 768px) {
+    .container-to-right {
+        transform: skew(var(--skew-angle));
+    }
+
+    .content-to-right {
+        transform: skew(calc(-1 * var(--skew-angle)));
+    }
+}
