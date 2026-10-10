@@ -10,7 +10,7 @@ const ICON = () => {
                 src="/home/oneplatform/hexagon.svg" alt="Feature icon" width={1000} height={1000}/>
             <Image
                 className={`z-10`}
-                src={'/xsetra/globe.png'} alt="Feature icon" width={25} height={25}/>
+                src={'/xsetra/globe.svg'} alt="Feature icon" width={25} height={25}/>
         </div>
     );
 };

@@ -82,7 +82,7 @@ function SheetContent({
                     <div
                         className={`w-full flex flex-row justify-between items-center border-b border-webxpay-border-grey/20 p-4 py-6 sm:py-10`}>
                         <Link href={'/'}>
-                            <Image src={'/common/logo.png'} alt={'Home Page Banner image'} height={30} width={200}/>
+                            <Image src={'/common/logo.svg'} alt={'Home Page Banner image'} height={30} width={200}/>
                         </Link>
                         <div className={`flex justify-center items-center`}>
                             <SheetPrimitive.Close

@@ -14,7 +14,7 @@ const Cores = () => {
                         className={`w-[230px]`}
                         width={1200}
                         height={1000}
-                        alt={'xgateway-icon'} src={'/home/coresolution/xgateway-icon.png'}/>
+                        alt={'xgateway-icon'} src={'/home/coresolution/xgateway-icon.svg'}/>
                     <p>
                         XGATEWAY is WEBXPAY’s all-encompassing online payment platform, designed for those looking to
                         accept credit/debit cards, mobile wallets, and direct bank transfers with minimal effort. Since
@@ -45,7 +45,7 @@ const Cores = () => {
                         className={`w-[140px]`}
                         width={1200}
                         height={1000}
-                        alt={'xpos-icon'} src={'/home/coresolution/xpos-icon.png'}/>
+                        alt={'xpos-icon'} src={'/home/coresolution/xpos-icon.svg'}/>
                     <p>
                         XPOS is WEBXPAY’s point-of-sale (POS) system, crafted for contemporary in-store experiences. It
                         combines contactless card acceptance, QR-based payments, and T+1 settlements on a single

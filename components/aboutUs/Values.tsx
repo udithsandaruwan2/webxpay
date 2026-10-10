@@ -37,7 +37,6 @@ const Values = () => {
                 alt="Product Suite Background"
                 fill
                 className="object-cover z-0 hidden md:block"
-                priority
             />
             <div className="absolute inset-0 bg-black/90 md:bg-black/35 z-10"/>
             <div className="relative z-20 pt-16 lg:pt-24 pb-12 md:pb-20 max-w-7xl mx-auto md:px-5">
@@ -51,7 +50,7 @@ const Values = () => {
                                 className={`relative h-14 w-14 inline-flex justify-center items-center`}>
                                 <Image
                                     className={`absolute object-contain`}
-                                    src="/home/oneplatform/hexagon.png" alt="Feature icon" fill/>
+                                    src="/home/oneplatform/hexagon.svg" alt="Feature icon" fill/>
                                 <Image
                                     className={`z-10 pl-0.5`}
                                     src={`/about-us/values/${value.title.replaceAll(" ", "_")}.svg`} alt="Feature icon"

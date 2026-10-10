@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useDidUpdate, useViewportSize } from "@mantine/hooks";
 import Solutions from "@/components/common/solutions";
 import {
   Sheet,
@@ -18,19 +17,25 @@ const Header = () => {
   const [solutionsSelected, setSolutionsSelected] = useState(false);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  const { width } = useViewportSize();
-  useDidUpdate(() => {
-    if (width >= 1024) {
-      setSolutionsSelected(false);
-      setIsSheetOpen(false);
-    }
-  }, [width]);
+  useEffect(() => {
+    if (!isSheetOpen) return;
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+    const handleMediaChange = (e: MediaQueryListEvent) => {
+      if (e.matches) {
+        setSolutionsSelected(false);
+        setIsSheetOpen(false);
+      }
+    };
+    mediaQuery.addEventListener("change", handleMediaChange);
+    return () => mediaQuery.removeEventListener("change", handleMediaChange);
+  }, [isSheetOpen]);
 
   useEffect(() => {
     if (!isSheetOpen) {
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setSolutionsSelected(false);
       }, 300);
+      return () => clearTimeout(timer);
     }
   }, [isSheetOpen]);
 
@@ -52,7 +57,7 @@ const Header = () => {
           <div className="flex-1 flex justify-center">
             <Link href={"/"}>
               <Image
-                src={"/common/logo.png"}
+                src={"/common/logo.svg"}
                 className={`cursor-pointer`}
                 alt={"Home Page Banner image"}
                 height={30}
@@ -89,7 +94,7 @@ const Header = () => {
         className={`lg:hidden items-center flex justify-between flex-row bg-white/80 backdrop-blur-lg pl-4 pr-3 py-3 rounded-xl`}
       >
         <Link href={"/"}>
-          <Image src={"/common/logo.png"} alt={"Home Page Banner image"} height={18} width={100} />
+          <Image src={"/common/logo.svg"} alt={"Home Page Banner image"} height={18} width={100} />
         </Link>
         <Sheet open={isSheetOpen} onOpenChange={(open) => setIsSheetOpen(open)}>
           <SheetTrigger asChild>

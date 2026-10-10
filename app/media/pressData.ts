@@ -1,7 +1,16 @@
 import { PressProps } from "@/components/press/latestSingle";
 
 const pressData: PressProps[] = [
+
   // First two items for the latest section
+    {
+    imagePath: "/media/hero_ryan_perera.png",
+  title: "WEBXPAY bolsters Board with Ryan Perera’s appointment",
+    description:
+      "WEBXPAY appoints accomplished banking and business executive Ryan Perera to further strengthen its leadership and international expansion.",
+    url: "https://www.ft.lk/financial-services/WEBXPAY-bolsters-Board-with-Ryan-Perera-s-appointment/42-798380",
+    isNewTab: true, // Defaults to false, meaning it does not open in a new tab unless specified as isNewTab: true. Can be relative or absolute URL
+  },
   {
     imagePath: "/media/google_pay.png",
     title: "Google Pay Now Live on WEBXPAY",

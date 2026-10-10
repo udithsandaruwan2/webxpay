@@ -10,7 +10,6 @@ const WhyAreWe = () => {
                 alt="Product Suite Background"
                 fill
                 className="object-cover z-0 hidden md:block"
-                priority
             />
             <div className="absolute inset-0 bg-black/90 md:bg-black/35 z-10"/>
             <div className={`relative z-20 py-12 md:py-20 max-w-6xl px-5 mx-auto text-center space-y-8`}>

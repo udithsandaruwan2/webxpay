@@ -56,7 +56,7 @@ const Xsplit = () => {
                             <Image
                                 className={`w-[140px]`}
                                 alt={'icon'}
-                                src={'/solutions/xsplit/icon.png'} width={200} height={100}/>
+                                src={'/solutions/xsplit/icon.svg'} width={200} height={100}/>
                             <p className={`${isDetailedView ? 'max-w-5xl mx-auto text-center' : ''}`}>
                                 XSPLIT is WEBXPAY’s flagship credit card–based seamless instalment solution, empowering
                                 businesses to offer flexible payment plans on high-value purchases. By lowering the

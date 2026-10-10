@@ -134,10 +134,6 @@ export default function ChatbotWidget() {
 
     return (
         <>
-            <style dangerouslySetInnerHTML={{__html: `
-              @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-            `}} />
-
             {/* Floating Launcher Buttonssssbbdb */}
             <button className="cw-launcher" onClick={() => setOpen(true)} aria-label="Open chat">
                 <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -292,7 +288,7 @@ export default function ChatbotWidget() {
                     display: flex;
                     flex-direction: column;
                     z-index: 99998;
-                    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+                    font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, sans-serif;
                     animation: cwSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
                 }
 

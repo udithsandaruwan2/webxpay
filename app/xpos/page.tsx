@@ -19,11 +19,11 @@ const Page = () => {
                     feats={
                         [
                             {
-                                iconPath: '/xpos/icon/1.png',
+                                iconPath: '/xpos/icon/1.svg',
                                 title: 'Accepts all major card schemes and local e-wallet/QR solutions (LankaQR, UPI, Alipay+).'
                             },
                             {
-                                iconPath: '/xpos/icon/2.png',
+                                iconPath: '/xpos/icon/2.svg',
                                 title: 'Digital receipt approach reduces waste and operating expenses.'
                             },
                         ]
@@ -33,11 +33,11 @@ const Page = () => {
                     feats={
                         [
                             {
-                                iconPath: '/xpos/icon/3.png',
+                                iconPath: '/xpos/icon/3.svg',
                                 title: 'Next-day settlements for local transactions.'
                             },
                             {
-                                iconPath: '/xpos/icon/4.png',
+                                iconPath: '/xpos/icon/4.svg',
                                 title: 'An integrated dashboard with a merchant app for daily sales tracking, refunds, chargebacks and reconciliation.'
                             },
                         ]
@@ -47,11 +47,11 @@ const Page = () => {
                     feats={
                         [
                             {
-                                iconPath: '/xpos/icon/5.png',
+                                iconPath: '/xpos/icon/5.svg',
                                 title: 'Round-the-clock call centre for merchant and technical assistance.'
                             },
                             {
-                                iconPath: '/xpos/icon/6.png',
+                                iconPath: '/xpos/icon/6.svg',
                                 title: 'Dedicated merchant portal for real-time issue tracking and self-service resolution.'
                             },
                         ]
@@ -61,7 +61,7 @@ const Page = () => {
                     feats={
                         [
                             {
-                                iconPath: '/xpos/icon/7.png',
+                                iconPath: '/xpos/icon/7.svg',
                                 title: 'Starter, Economy, and Business, each with varying transaction rates to match turnover levels.'
                             },
 
@@ -72,11 +72,11 @@ const Page = () => {
                     feats={
                         [
                             {
-                                iconPath: '/xpos/icon/8.png',
+                                iconPath: '/xpos/icon/8.svg',
                                 title: 'PCI DSS for card data and ISO 27001 for broader data integrity.'
                             },
                             {
-                                iconPath: '/xpos/icon/9.png',
+                                iconPath: '/xpos/icon/9.svg',
                                 title: 'Encrypted transaction flows safeguard information for any retail environment.'
                             },
                         ]

@@ -26,7 +26,7 @@ const Pricing = () => {
         <br />
         <h1 className={"font-semibold"}>Packages</h1>
         <div className={`w-[300px] pt-2.5 pb-6 lg:pb-12`}>
-          <Image alt={"xgateway"} src={"/pricing/packages/xgateway.png"} width={600} height={300} />
+          <Image alt={"xgateway"} src={"/pricing/packages/xgateway.svg"} width={600} height={300} />
         </div>
 
         <div className={`hidden text-sm lg:flex flex-col gap-y-2`}>
@@ -348,7 +348,7 @@ const Pricing = () => {
         <br />
         <h1 className={"font-semibold"}>Packages</h1>
         <div className={`w-[180px] pt-2.5 pb-6 lg:pb-12`}>
-          <Image alt={"xgateway"} src={"/pricing/packages/xpos.png"} width={600} height={300} />
+          <Image alt={"xgateway"} src={"/pricing/packages/xpos.svg"} width={600} height={300} />
         </div>
 
         <div className={`hidden text-sm lg:flex flex-col gap-y-2`}>
@@ -491,7 +491,7 @@ const Pricing = () => {
         <br />
         <h1 className={"font-semibold"}>Packages</h1>
         <div className={`w-[200px] pt-2.5 pb-6 lg:pb-12`}>
-          <Image alt={"xgateway"} src={"/pricing/packages/xsplit.png"} width={600} height={300} />
+          <Image alt={"xgateway"} src={"/pricing/packages/xsplit.svg"} width={600} height={300} />
         </div>
 
         <div className={`hidden text-sm lg:flex flex-col gap-y-2`}>
@@ -606,7 +606,7 @@ const Pricing = () => {
         <div className={`pb-6 lg:pb-12`}>
           <h1 className={"font-semibold pb-[5px] lg:pb-2.5"}>Packages</h1>
           <div className={`w-[200px]`}>
-            <Image alt={"xgateway"} src={"/pricing/packages/xgateway.png"} width={600} height={300} />
+            <Image alt={"xgateway"} src={"/pricing/packages/xgateway.svg"} width={600} height={300} />
           </div>
         </div>
 
@@ -981,7 +981,7 @@ const Pricing = () => {
         <div className={`pb-6 lg:pb-12`}>
           <h1 className={"font-semibold pb-[5px] lg:pb-2.5"}>Packages</h1>
           <div className={`w-[110px]`}>
-            <Image alt={"xgateway"} src={"/pricing/packages/xpos.png"} width={600} height={300} />
+            <Image alt={"xgateway"} src={"/pricing/packages/xpos.svg"} width={600} height={300} />
           </div>
         </div>
 
@@ -1163,7 +1163,7 @@ const Pricing = () => {
         <div className={`pb-6 lg:pb-12`}>
           <h1 className={"font-semibold pb-[5px] lg:pb-2.5"}>Packages</h1>
           <div className={`w-[120px]`}>
-            <Image alt={"xgateway"} src={"/pricing/packages/xsplit.png"} width={600} height={300} />
+            <Image alt={"xgateway"} src={"/pricing/packages/xsplit.svg"} width={600} height={300} />
           </div>
         </div>
 

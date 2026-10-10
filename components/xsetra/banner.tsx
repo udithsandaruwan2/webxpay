@@ -77,7 +77,7 @@ const Banner = () => {
                         </div>
 
                         <div className={'relative top-1.5 flex flex-col gap-y-3 text-left mt-6 px-5 pb-8 bg-white'}>
-                            <Image src={'/xsetra/icon.png'} alt="Banner background"
+                            <Image src={'/xsetra/icon.svg'} alt="Banner background"
                                    className={``}
                                    width={180} height={300}/>
                             <div

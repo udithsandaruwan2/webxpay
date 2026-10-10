@@ -16,7 +16,7 @@ const Details = () => {
                     <Image
                         className={`w-[180px] hidden md:block`}
                         alt={'icon'}
-                        src={'/xsetra/icon.png'} width={200} height={100}/>
+                        src={'/xsetra/icon.svg'} width={200} height={100}/>
                     <h1 className={`font-bold text-[31px] md:text-[39px]`}>Rationale and Core Ethos</h1>
                     <p>
                         XSETRA is WEBXPAY’s vision of how financial activities and daily living should

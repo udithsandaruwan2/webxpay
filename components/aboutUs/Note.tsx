@@ -38,7 +38,7 @@ const Note = () => {
                                     className={`relative h-16 w-16 grid place-items-center md:scale-90`}>
                                     <Image
                                         className={`absolute`}
-                                        src="/home/oneplatform/hexagon.png" alt="Feature icon bg" width={1000}
+                                        src="/home/oneplatform/hexagon.svg" alt="Feature icon bg" width={1000}
                                         height={1000}/>
                                     <Image
                                         className={`z-10 scale-150`}

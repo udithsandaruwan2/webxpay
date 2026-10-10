@@ -16,7 +16,7 @@ const Details = () => {
                     <Image
                         className={`w-[180px] hidden md:block`}
                         alt={'icon'}
-                        src={'/xgateway/icon.png'} width={200} height={100}/>
+                        src={'/xgateway/icon.svg'} width={200} height={100}/>
                     <p>
                         XGATEWAY is WEBXPAY’s all-encompassing online payment platform, designed for those looking to
                         accept credit/debit cards, mobile wallets, and direct bank transfers with minimal effort. Since

@@ -76,7 +76,7 @@ const Banner = () => {
                         </div>
 
                         <div className={'relative top-1.5 flex flex-col gap-y-3 text-left mt-6 px-5 pb-8 bg-white'}>
-                            <Image src={'/xpos/icon.png'} alt="Banner background"
+                            <Image src={'/xpos/icon.svg'} alt="Banner background"
                                    className={``}
                                    width={150} height={300}/>
                             <div

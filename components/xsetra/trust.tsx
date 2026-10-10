@@ -10,7 +10,6 @@ const Trust = () => {
                 alt="Product Suite Background"
                 fill
                 className="object-cover object-top z-0 hidden md:block"
-                priority
             />
             <div className="absolute inset-0 bg-black/90 md:bg-black/35 z-10"/>
             <div className="relative z-20 pt-4 pb-16 md:pb-20 max-w-7xl mx-auto md:px-5">

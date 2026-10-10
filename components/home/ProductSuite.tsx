@@ -10,7 +10,6 @@ const ProductSuite = () => {
                 alt="Product Suite Background"
                 fill
                 className="object-cover z-0 hidden md:block"
-                priority
             />
             <div className="absolute inset-0 bg-black/90 md:bg-black/35 "/>
             <div className="relative pt-4 pb-16 md:pb-20 max-w-7xl mx-auto md:px-5">

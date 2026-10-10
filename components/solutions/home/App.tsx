@@ -18,7 +18,7 @@ const App = () => {
                     <Image
                         className={`w-[140px]`}
                         alt={'icon'}
-                        src={'/solutions/app/icon.png'} width={200} height={100}/>
+                        src={'/solutions/app/icon.svg'} width={200} height={100}/>
                     <p>
                         XSETRA is WEBXPAY’s vision of how financial activities and daily living should
                         intersect—smoothly, securely, and in one place. By bundling diverse features such as bill

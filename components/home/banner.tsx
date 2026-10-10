@@ -5,11 +5,12 @@ import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const slides = [
-    { desktop: '/media/hero_new.png',       mobile: '/media/hero_new_mobile_01.svg' },
-    { desktop: '/media/hero_new_2.jpg',         mobile: '/media/hero_new_mobile_02.svg' },
-    { desktop: '/media/hero_new_5.jpeg',     mobile: '/media/hero_new_mobile_05.png' },
-    { desktop: '/media/hero_new_6_v2.jpg',     mobile: '/media/hero_new_mobile_06.svg' },
-    { desktop: '/media/hero_new_3.jpeg',        mobile: '/media/hero_new_mobile_07.svg' },
+    { desktop: '/media/hero_ryan_perera.webp', mobile: '/media/hero_ryan_perera_mobile.webp' },
+    { desktop: '/media/hero_new.png',       mobile: '/media/hero_new_mobile_01.webp' },
+    { desktop: '/media/hero_new_2.jpg',         mobile: '/media/hero_new_mobile_02.webp' },
+    // { desktop: '/media/hero_new_5.jpeg',     mobile: '/media/hero_new_mobile_05.webp' },
+    { desktop: '/media/hero_new_6_v2.jpg',     mobile: '/media/hero_new_mobile_06.webp' },
+    { desktop: '/media/hero_new_3.jpeg',        mobile: '/media/hero_new_mobile_07.webp' },
 ];
 
 const SLIDE_DURATION = 5000; // ms per slide

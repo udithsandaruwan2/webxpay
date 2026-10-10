@@ -51,7 +51,7 @@ const XCollector = () => {
                         <Image
                             className={`w-[200px]`}
                             alt={'icon'}
-                            src={'/solutions/xcollector/icon.png'} width={300} height={140}/>
+                            src={'/solutions/xcollector/icon.svg'} width={300} height={140}/>
                         <p className={`${isDetailedView ? 'max-w-5xl mx-auto text-center' : ''}`}>
                             {isDetailedView ? <>XCOLLECTOR from WEBXPAY is purpose-built for on-site or door-to-door
                                 transactions, letting agents accept card, QR, or occasionally recorded cash with minimal

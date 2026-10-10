@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import { useViewportSize } from "@mantine/hooks";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
@@ -38,8 +37,15 @@ const secondList = [
 ];
 
 const CoreSolution = () => {
-  const { width } = useViewportSize();
   const [hovered, setHovered] = useState<"left" | "right" | null>(null);
+  const [width, setWidth] = useState(1024);
+
+  React.useEffect(() => {
+    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Widths: [left, right]
   const getWidths = (hovered: string | null) => {
@@ -209,7 +215,7 @@ const CoreSolution = () => {
                 <h1 className={`font-extrabold text-[18px]`}>In-Store Reimagined</h1>
                 <Image
                   className={`bg-transparent`}
-                  src={"/home/coresolution/xpos-icon.png"}
+                  src={"/home/coresolution/xpos-icon.svg"}
                   alt="Banner background"
                   width={161}
                   height={50}
@@ -254,7 +260,7 @@ const CoreSolution = () => {
               <div className={`h-32 space-y-4 pt-4`}>
                 <h1 className={`font-extrabold text-[18px]`}>Online Made Easy</h1>
                 <Image
-                  src={"/home/coresolution/xgateway-icon.png"}
+                  src={"/home/coresolution/xgateway-icon.svg"}
                   alt="Banner background"
                   className={`bg-transparent`}
                   width={300}
@@ -327,7 +333,7 @@ const CoreSolution = () => {
                 <Image
                   alt={"xpos-icon"}
                   className={``}
-                  src={"/home/coresolution/xpos-icon.png"}
+                  src={"/home/coresolution/xpos-icon.svg"}
                   height={200}
                   width={161}
                 />
@@ -415,7 +421,7 @@ const CoreSolution = () => {
                 <Image
                   className={``}
                   alt={"xpos-icon"}
-                  src={"/home/coresolution/xgateway-icon.png"}
+                  src={"/home/coresolution/xgateway-icon.svg"}
                   height={350}
                   width={310}
                 />

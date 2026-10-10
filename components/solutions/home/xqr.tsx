@@ -46,7 +46,7 @@ const Xqr = () => {
                         <Image
                             className={`w-[100px]`}
                             alt={'icon'}
-                            src={'/solutions/xqr/icon.png'} width={200} height={100}/>
+                            src={'/solutions/xqr/icon.svg'} width={200} height={100}/>
                         <p className={`${isDetailedView ? 'max-w-5xl mx-auto text-center' : ''}`}>
                             Built on the LankaQR framework and enriched by EMV standards, XQR by WEBXPAY unifies local
                             and

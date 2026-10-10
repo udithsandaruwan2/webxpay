@@ -74,7 +74,7 @@ const Xsupplier = () => {
                             <Image
                                 className={`w-[140px]`}
                                 alt={'icon'}
-                                src={'/solutions/xsupplier/icon.png'} width={200} height={100}/>
+                                src={'/solutions/xsupplier/icon.svg'} width={200} height={100}/>
                             <p className={`${isDetailedView ? 'max-w-5xl mx-auto text-center' : ''}`}>
                                 XSUPPLIER is a forward-thinking platform that streamlines B2B supply chains by extending
                                 credit

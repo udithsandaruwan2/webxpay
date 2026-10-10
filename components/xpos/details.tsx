@@ -16,7 +16,7 @@ const Details = () => {
                     <Image
                         className={`w-[180px] hidden md:block`}
                         alt={'icon'}
-                        src={'/xpos/icon.png'} width={200} height={100}/>
+                        src={'/xpos/icon.svg'} width={200} height={100}/>
                     <p>
                         XPOS is WEBXPAY’s point-of-sale (POS) system, crafted for contemporary in-store experiences. It combines contactless card acceptance, QR-based payments, and T+1 settlements on a single device—paperless by default, though printed receipts are optional upon request.
                     </p>

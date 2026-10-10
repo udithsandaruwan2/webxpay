@@ -68,7 +68,7 @@ const Xpaylink = () => {
                             <Image
                                 className={`w-[140px]`}
                                 alt={'icon'}
-                                src={'/solutions/xpaylink/icon.png'} width={200} height={100}/>
+                                src={'/solutions/xpaylink/icon.svg'} width={200} height={100}/>
                             <p className={`${isDetailedView ? 'max-w-5xl mx-auto text-center' : ''}`}>
                                 XPAYLINK is a flexible, shareable link solution designed for merchants and agencies
                                 requiring
