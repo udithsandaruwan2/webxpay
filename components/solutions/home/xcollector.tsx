@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react';
 import Image from "next/image";
-import CloseIcon from "@/public/solutions/icons/close.Icon";
+import CloseIcon from "@/components/solutions/icons/CloseIcon";
 import SolutionDetailCard from "@/components/solutions/home/items/SolutionDetailCard";
 
 const keyAdvantageCardDetails = [{

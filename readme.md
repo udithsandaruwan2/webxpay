@@ -24,6 +24,11 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm start` | Serve production build |
 | `npm run lint` | ESLint |
 
+## Email configuration
+
+The email API routes require `EMAIL_USER` and `EMAIL_PASS` in the server environment.
+Optionally configure `EMAIL_HOST` and `EMAIL_PORT`. Do not commit credentials to the repository.
+
 ## Deploy
 
 GitHub Actions deploys to EC2 on push to `main` (see `.github/workflows/deploy.yml`).

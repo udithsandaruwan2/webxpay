@@ -23,7 +23,7 @@ const Govpay = () => {
             >
                 <Image
                     alt="Crypto Transfer"
-                    src={'/common/crypto-logo.png'}
+                    src={'/common/crypto-logo.webp'}
                     width={100}
                     height={58}
                     className="object-contain"

@@ -16,7 +16,7 @@ const SecurityScale = () => {
             </div>
             <div className={`md:w-1/2 h-max md:flex mx-auto md:justify-end`}>
                 <div>
-                    <Image src={'/home/security/laptop.png'} alt="Banner background" width={500} height={1000}
+                    <Image src={'/home/security/laptop.webp'} alt="Banner background" width={500} height={1000}
                            className={`h-full object-contain md:h-[600px] relative right-3.5 md:left-0`}/>
                 </div>
             </div>

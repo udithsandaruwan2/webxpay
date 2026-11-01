@@ -350,7 +350,7 @@ const CoreSolution = () => {
                 className={`relative`}
               >
                 <Image
-                  src={"/home/coresolution/xpos-updated.png"}
+                  src={"/home/coresolution/xpos-updated.webp"}
                   alt="Banner background"
                   className={``}
                   width={300}

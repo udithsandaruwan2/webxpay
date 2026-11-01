@@ -9,7 +9,7 @@ const Details = () => {
                     width={1000}
                     height={1000}
                     className={`rounded-lg`}
-                    alt={'phone'} src={'/xpos/1.png'}/>
+                    alt={'phone'} src={'/xpos/1.webp'}/>
             </div>
             <div className={`flex items-center md:px-5`}>
                 <div className={`my-auto flex flex-col gap-y-6 md:p-5 pt-5 md:pt-12`}>

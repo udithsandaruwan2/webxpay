@@ -11,8 +11,12 @@ function isNotFoundResponse(text: string) {
     return /(not\s+found|could(?:n't| not)\s+find|can(?:'t|not)\s+find|don't\s+have|do\s+not\s+have|no\s+(?:relevant|specific)\s+information|i\s+(?:don't|do\s+not)\s+know|unable\s+to\s+find|couldn't\s+locate|i\s*(?:am|'m)?\s*sorry.*(?:don't|do\s+not)\s*(?:quite\s*)?understand|do(?:n't| not)\s+quite\s+understand|not\s+sure\s+(?:what\s+you\s+mean|i\s+understand)|please\s+rephrase|could\s+you\s+rephrase|can\s+you\s+rephrase|did(?:n't| not)\s+catch\s+that|could(?:n't| not)\s+understand)/i.test(text);
 }
 
-export default function ChatbotWidget() {
-    const [open, setOpen] = useState(false);
+type ChatbotWidgetProps = {
+    initialOpen?: boolean;
+};
+
+export default function ChatbotWidget({initialOpen = false}: ChatbotWidgetProps) {
+    const [open, setOpen] = useState(initialOpen);
     const [messages, setMessages] = useState<
         { sender: "user" | "bot"; text: string }[]
     >([]);
@@ -134,14 +138,12 @@ export default function ChatbotWidget() {
 
     return (
         <>
-            {/* Floating Launcher Buttonssssbbdb */}
             <button className="cw-launcher" onClick={() => setOpen(true)} aria-label="Open chat">
                 <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
             </button>
 
-            {/* Chat Widgetsssss */}
             {open && (
                 <div className="cw-panel">
                     <header className="cw-header">

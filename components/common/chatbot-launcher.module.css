@@ -1,0 +1,72 @@
+.launcher {
+    position: fixed;
+    z-index: 99999;
+    right: calc(10vw - 36px);
+    bottom: 28px;
+    display: flex;
+    width: 72px;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: #0f0f0f;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(15, 15, 15, 0.4);
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.launcher:hover {
+    transform: scale(1.08);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    animation: none;
+}
+
+.launcher:disabled {
+    cursor: wait;
+}
+
+.launcher svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.launcher:hover svg {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(15, 15, 15, 0.4);
+    }
+    50% {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(15, 15, 15, 0);
+    }
+}
+
+@media (max-width: 767px) {
+    .launcher {
+        right: 16px;
+        bottom: 20px;
+        width: 60px;
+        height: 60px;
+        transform: none;
+    }
+
+    .launcher:hover {
+        transform: scale(1.05);
+    }
+
+    .launcher svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (min-width: 768px) {
+    .launcher {
+        right: calc(5vw - 36px);
+    }
+}

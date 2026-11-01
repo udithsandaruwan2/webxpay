@@ -23,7 +23,7 @@ const Empower = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src={'/home/empower/screen.png'}
+                <Image src={'/home/empower/screen.webp'}
                        className={`w-full md:w-1/2 lg:w-3/5 relative left-5 lg:left-32 obcontent-center`}
                        alt="Banner background" width={500} height={300}/>
             </div>

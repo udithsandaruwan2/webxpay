@@ -26,7 +26,7 @@ const Commerce = () => {
                             fill
                             style={{objectFit: 'cover', objectPosition: 'center'}}
                             alt={'purpose'}
-                            src={'/about-us/commerce/purpose.jpg'}
+                            src={'/about-us/commerce/purpose.webp'}
                         />
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Commerce = () => {
                             fill
                             style={{objectFit: 'cover', objectPosition: 'center'}}
                             alt={'human'}
-                            src={'/about-us/commerce/human.jpg'}
+                            src={'/about-us/commerce/human.webp'}
                         />
                     </div>
                     <div className={`flex items-center md:w-11/12 md:justify-end`}>

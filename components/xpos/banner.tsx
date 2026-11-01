@@ -17,7 +17,7 @@ const Banner = () => {
                     <div className={'w-full h-screen top-0 absolute z-10'}>
                         <>
                             <Image
-                                src={'/xpos/banner.png'}
+                                src={'/xpos/banner.webp'}
                                 alt={'Home Header Image'}
                                 fill
                                 className={'object-cover object-right w-auto h-full z-10 relative'}
@@ -66,7 +66,7 @@ const Banner = () => {
                     >
                         <div
                             className={'relative left-0 w-auto h-[490px] sm:h-[560px]'}>
-                            <Image src={'/xpos/banner.png'}
+                            <Image src={'/xpos/banner.webp'}
                                    alt={'Home Page Banner image'}
                                    fill
                                    className={'object-cover object-[25%_center]'}

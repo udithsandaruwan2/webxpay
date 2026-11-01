@@ -12,7 +12,7 @@ const Page = () => {
             <div className={`max-w-7xl mx-auto px-5 pt-4 pb-10 lg:pt-6 lg:pb-16`}>
                 <section className={`relative min-h-[300px] overflow-hidden rounded-xl bg-black md:min-h-[360px]`}>
                     <Image
-                        src="/careers/hero-office.png"
+                        src="/careers/hero-office.webp"
                         alt="WEBXPAY team collaborating at work"
                         fill
                         priority

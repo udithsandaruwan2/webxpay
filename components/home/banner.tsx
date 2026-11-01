@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const slides = [
+     { desktop: '/media/UPI-Now-Live-for-Sri-Lankan-Merchants.webp', mobile: '/media/UPI-Payments-Now-Live-in-Sri-Lanka-_1_.webp' },
     { desktop: '/media/hero_ryan_perera.webp', mobile: '/media/hero_ryan_perera_mobile.webp' },
     { desktop: '/media/hero_new.png',       mobile: '/media/hero_new_mobile_01.webp' },
     { desktop: '/media/hero_new_2.jpg',         mobile: '/media/hero_new_mobile_02.webp' },

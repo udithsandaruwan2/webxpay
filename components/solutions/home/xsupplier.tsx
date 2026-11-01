@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react';
 import Image from "next/image";
-import CloseIcon from "@/public/solutions/icons/close.Icon";
+import CloseIcon from "@/components/solutions/icons/CloseIcon";
 import SolutionDetailCard from "@/components/solutions/home/items/SolutionDetailCard";
 
 const keyAdvantageCardDetails = [{
@@ -58,14 +58,14 @@ const Xsupplier = () => {
                                 width={388}
                                 height={287}
                                 className={`rounded-md md:mt-10 mx-auto`}
-                                alt={'phone'} src={'/solutions/xsupplier/img.jpg'}/>
+                                alt={'phone'} src={'/solutions/xsupplier/img.webp'}/>
                         </div> :
                         <div>
                             <Image
                                 width={1000}
                                 height={1000}
                                 className={`rounded-md`}
-                                alt={'phone'} src={'/solutions/xsupplier/img.jpg'}/>
+                                alt={'phone'} src={'/solutions/xsupplier/img.webp'}/>
                         </div>}
                     <div className={`flex items-center md:px-5`}>
                         <div

@@ -4,7 +4,7 @@ const pressData: PressProps[] = [
 
   // First two items for the latest section
     {
-    imagePath: "/media/hero_ryan_perera.png",
+    imagePath: "/media/hero_ryan_perera.webp",
   title: "WEBXPAY bolsters Board with Ryan Perera’s appointment",
     description:
       "WEBXPAY appoints accomplished banking and business executive Ryan Perera to further strengthen its leadership and international expansion.",

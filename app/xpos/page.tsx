@@ -15,7 +15,7 @@ const Page = () => {
             <KeyH/>
             <div className={`flex flex-col gap-y-3 md:gap-y-20`}>
                 <FeatRow
-                    title={'All-in-One Device'} mainImagePath={'/xpos/2.png'}
+                    title={'All-in-One Device'} mainImagePath={'/xpos/2.webp'}
                     feats={
                         [
                             {

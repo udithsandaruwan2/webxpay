@@ -5,7 +5,7 @@ import {Manrope, Sora, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Govpay from "@/components/common/govpay";
-import ChatbotWidget from "@/app/ChatbotWidget";
+import ChatbotLoader from "@/components/common/ChatbotLoader";
 
 const manrope = Manrope({
     variable: "--font-manrope",
@@ -55,7 +55,7 @@ export default function RootLayout({
             suppressHydrationWarning
         >
         <Govpay/>
-        <ChatbotWidget/>
+        <ChatbotLoader/>
         {children}
         </body>
         </html>

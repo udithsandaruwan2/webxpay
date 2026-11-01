@@ -17,11 +17,11 @@ export function escapeHtml(str: string): string {
  * Note: Credentials should be configured in production via EMAIL_USER and EMAIL_PASS environment variables.
  */
 export async function createMailTransporter() {
-    const user = process.env.EMAIL_USER || 'leads@webxpay.com';
-    const pass = process.env.EMAIL_PASS || 'wxp@2025';
+    const user = process.env.EMAIL_USER?.trim();
+    const pass = process.env.EMAIL_PASS;
 
-    if (!process.env.EMAIL_PASS) {
-        console.warn('[Security Warning] EMAIL_PASS environment variable is not defined. Using legacy fallback credentials.');
+    if (!user || !pass) {
+        throw new Error('EMAIL_USER and EMAIL_PASS environment variables are required for email delivery.');
     }
 
     const transporter = nodemailer.createTransport({
